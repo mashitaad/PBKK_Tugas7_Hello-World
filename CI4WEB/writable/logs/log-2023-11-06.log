@@ -1,0 +1,56 @@
+CRITICAL - 2023-11-06 15:34:50 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-11-06 15:34:51 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\ci4web\system\Helpers\number_helper.php:136
+Stack trace:
+#0 C:\xampp\htdocs\ci4web\system\Helpers\number_helper.php(55): format_number(6.0, 2, NULL, Array)
+#1 C:\xampp\htdocs\ci4web\system\Debug\BaseExceptionHandler.php(145): number_to_size(6.0, 2)
+#2 C:\xampp\htdocs\ci4web\app\Views\errors\html\error_exception.php(361): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 C:\xampp\htdocs\ci4web\system\Debug\BaseExceptionHandler.php(241): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4web\system\Debug\BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 C:\xampp\htdocs\ci4web\system\Debug\ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\FrameworkException), 500, 'C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\ci4web\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#8 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\ci4web\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\ci4web\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\ci4web\public\index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-06 15:00:30 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-11-06 15:00:30 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\ci4web\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\ci4web\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 C:\xampp\htdocs\ci4web\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\ci4web\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\ci4web\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\ci4web\system\Debug\Exceptions.php(148): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\ci4web\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 C:\xampp\htdocs\ci4web\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\ci4web\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-06 15:02:42 --> App\Controllers\Home::index(): Return value must be of type string, none returned
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
